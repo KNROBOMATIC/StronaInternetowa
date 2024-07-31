@@ -1,6 +1,6 @@
 import Background from "../../components/background/Background.tsx";
 import "./Projects.scss"
-import React, {Fragment} from "react";
+import {Fragment} from "react";
 import {useNavigate} from "react-router-dom";
 
 function Projects(){
