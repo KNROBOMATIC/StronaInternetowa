@@ -1,0 +1,8 @@
+.component-background-style{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    background-image: url("RectangleGray.svg");
+    background-repeat: repeat;
+}
