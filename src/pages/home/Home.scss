@@ -1,5 +1,8 @@
 $page-home-logo-size-v: 50;
 $page-home-button-navigate-projects-size-v: 20;
+$main-color-theme-orange: #DC5F00;
+$main-color-theme-white: #EEEEEE;
+$main-color-theme-red: #CF0A0A;
 
 .page-home-logo {
     background-image: url("../../assets/Logo.svg");
@@ -28,26 +31,26 @@ $page-home-button-navigate-projects-size-v: 20;
 }
 
 .page-home-button-navigate-projects{
-    margin-top: 20vh;
-    margin-left: 25vw;
-    background-color: #DC5F00;
+    margin-top: calc(50vh + min(15vh, 15vw));
+    margin-left: calc(50vw - min(45vh, 45vw));
+    background-color: $main-color-theme-orange;
     width: min(#{$page-home-button-navigate-projects-size-v}vh, #{$page-home-button-navigate-projects-size-v}vw);
-    color: #EEEEEE;
+    color: $main-color-theme-white;
 }
 .page-home-button-navigate-projects:hover{
-    background-color: #EEEEEE;
-    color: #DC5F00;
-    border-color: #DC5F00;
+    background-color: $main-color-theme-white;
+    color: $main-color-theme-orange;
+    border-color: $main-color-theme-orange;
     border-style: solid;
     border-width: 5px;
 }
 
 .page-home-button-navigate-projects-fb-robomatic{
-    margin-top: 45vh;
-    margin-left: 76vw;
-    width: min(#{1.1*$page-home-button-navigate-projects-size-v}vh, #{1.1*$page-home-button-navigate-projects-size-v}vw);
-    background-color: black;
-    color: white;
+    margin-top: calc(50vh - min(40vh, 40vw));
+    margin-left: calc(50vw + min(30vh, 30vw));
+    width: min(#{0.9*$page-home-button-navigate-projects-size-v}vh, #{0.9*$page-home-button-navigate-projects-size-v}vw);
+    background-color: $main-color-theme-orange;
+    color: $main-color-theme-white;
 }
 .page-home-button-navigate-projects-fb-robomatic:hover{
     background-color: white;
@@ -57,17 +60,17 @@ $page-home-button-navigate-projects-size-v: 20;
     border-width: 5px;
 }
 .page-home-button-navigate-projects-fb-robomaticon{
-    margin-top: 79npvh;
-    margin-left: 45vw;
-    width: min(#{1.3*$page-home-button-navigate-projects-size-v}vh, #{1.3*$page-home-button-navigate-projects-size-v}vw);
-    background-color: #CF0A0A;
-    color: black;
+    margin-top: calc(50vh - min(19vh, 19vw));
+    margin-left: calc(50vw + min(25vh, 25vw));
+    width: min(#{1.1*$page-home-button-navigate-projects-size-v}vh, #{1.1*$page-home-button-navigate-projects-size-v}vw);
+    background-color: $main-color-theme-orange;
+    color: $main-color-theme-white;
 }
 
 .page-home-button-navigate-projects-fb-robomaticon:hover{
     background-color: black;
-    color: #CF0A0A;
-    border-color: #CF0A0A;
+    color: $main-color-theme-red;
+    border-color: $main-color-theme-red;
     border-style: solid;
     border-width: 5px;
 }

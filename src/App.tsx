@@ -1,13 +1,13 @@
-import './App.css'
-import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
-import Home from "./pages/home/Home.tsx";
-import Projects from "./pages/projects/Projects.tsx";
+import './App.css';
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./pages/home/Home";
+import Projects from "./pages/projects/Projects";
+
 function App() {
     return (
         <Router>
             <Routes>
-                <Route path="/" element={<Navigate to="/home" />} />
-                <Route path="/home" element={<Home />} />
+                <Route path="/" element={<Home />} />
                 <Route path="/projects" element={<Projects />} />
             </Routes>
         </Router>
