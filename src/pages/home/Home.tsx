@@ -1,27 +1,30 @@
 import { Fragment } from "react";
-import { useNavigate } from "react-router-dom";
 import Background from "../../components/background/Background";
 import "./Home.scss";
+import {openFacebookPageRobomatic, openFacebookPageRobomaticon, useNavigation} from "../../components/navigation/navigation.tsx";
 
 function Home() {
-    const navigate = useNavigate();
-
-    const handleNavigate = () => {
-        navigate("/projects");
-    };
 
     return (
         <Fragment>
             <Background/>
             <div className="page-home-logo"></div>
-            <div className="page-home-button-navigate page-home-button-navigate-projects" onClick={handleNavigate}>Go to
+            <div className="page-home-button-navigate page-home-button-navigate-projects" onClick={useNavigation().navigateToProjects}>Go to
                 Projects
             </div>
             <div className="page-home-button-navigate page-home-button-navigate-projects-fb-robomatic"
-                 onClick={handleNavigate}>Robomatic
+                 onClick={openFacebookPageRobomatic}>
+                <div className="fb-icon fb-icon-robomatic"></div>
+                Robomatic
+                <div className="fb-icon robomatic-icon"></div>
             </div>
             <div className="page-home-button-navigate page-home-button-navigate-projects-fb-robomaticon"
-                 onClick={handleNavigate}>Robomaticon
+                 onClick={openFacebookPageRobomaticon}>
+                <div className="fb-icon fb-icon-robomaticon"></div>
+                Robomaticon
+                <div className="fb-icon robomaticon-icon">
+                    <div className="fb-icon robomaticon-icon-logo"></div>
+                </div>
             </div>
         </Fragment>
     );

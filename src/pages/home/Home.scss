@@ -42,13 +42,13 @@ $main-color-theme-red: #CF0A0A;
     color: $main-color-theme-orange;
     border-color: $main-color-theme-orange;
     border-style: solid;
-    border-width: 5px;
+    border-width: 0.4em;
 }
 
 .page-home-button-navigate-projects-fb-robomatic{
     margin-top: calc(50vh - min(40vh, 40vw));
-    margin-left: calc(50vw + min(30vh, 30vw));
-    width: min(#{0.9*$page-home-button-navigate-projects-size-v}vh, #{0.9*$page-home-button-navigate-projects-size-v}vw);
+    margin-left: calc(50vw + min(26vh, 26vw));
+    width: min(#{1.1*$page-home-button-navigate-projects-size-v}vh, #{1.1*$page-home-button-navigate-projects-size-v}vw);
     background-color: $main-color-theme-orange;
     color: $main-color-theme-white;
 }
@@ -57,12 +57,12 @@ $main-color-theme-red: #CF0A0A;
     color: black;
     border-color: black;
     border-style: solid;
-    border-width: 5px;
+    border-width: 0.4em;
 }
 .page-home-button-navigate-projects-fb-robomaticon{
     margin-top: calc(50vh - min(19vh, 19vw));
-    margin-left: calc(50vw + min(25vh, 25vw));
-    width: min(#{1.1*$page-home-button-navigate-projects-size-v}vh, #{1.1*$page-home-button-navigate-projects-size-v}vw);
+    margin-left: calc(50vw + min(24vh, 24vw));
+    width: min(#{1.2*$page-home-button-navigate-projects-size-v}vh, #{1.2*$page-home-button-navigate-projects-size-v}vw);
     background-color: $main-color-theme-orange;
     color: $main-color-theme-white;
 }
@@ -72,5 +72,64 @@ $main-color-theme-red: #CF0A0A;
     color: $main-color-theme-red;
     border-color: $main-color-theme-red;
     border-style: solid;
-    border-width: 5px;
+    border-width: 0.4em;
+}
+
+.fb-icon{
+    width: 1em;
+    height: 1em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.fb-icon-robomatic{
+    background-image: url('Facebook_white.svg');
+}
+
+.page-home-button-navigate-projects-fb-robomatic:hover .fb-icon-robomatic{
+    background-image: url('Facebook_black.svg');
+}
+
+.fb-icon-robomaticon{
+    background-image: url('Facebook_white.svg');
+}
+
+.page-home-button-navigate-projects-fb-robomaticon:hover .fb-icon-robomaticon{
+    background-image: url('Facebook_red.svg');
+}
+
+.robomaticon-icon{
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+    background-image: url("hexagon_white.svg");
+}
+
+.page-home-button-navigate-projects-fb-robomaticon:hover .robomaticon-icon{
+    background-image: url('hexagon_red.svg');
+}
+
+.robomatic-icon{
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+    background-image: url("../../assets/Logo_white.svg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-home-button-navigate-projects-fb-robomatic:hover .robomatic-icon{
+    background-image: url("../../assets/Logo.svg");
+}
+
+.robomaticon-icon-logo{
+    width: 0.7em;
+    height: 0.7em;
+    transform: translate(0.15em, -0.27em);
+    background-image: url("../../assets/Logo_orange.svg");
+}
+
+.page-home-button-navigate-projects-fb-robomaticon:hover .robomaticon-icon-logo{
+    background-image: url("../../assets/Logo.svg");
 }

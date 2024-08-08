@@ -18,9 +18,11 @@ function Projects(){
     return (
         <Fragment>
             <Background/>
-            <button onClick={handleNavigateHome}>Go to Home</button>
-            <button onClick={handleNavigateTeslaCoil}>Tesla Coil</button>
-            <button onClick={handleNavigateRoboticHead}>Robotic Head</button>
+            <div className="hexagon-container">
+                <div className="hexagon-button" onClick={handleNavigateHome}>Go to Home</div>
+                <div className="hexagon-button" onClick={handleNavigateTeslaCoil}>Tesla Coil</div>
+                <div className="hexagon-button" onClick={handleNavigateRoboticHead}>Robotic Head</div>
+            </div>
         </Fragment>
     )
 }

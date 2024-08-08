@@ -1,0 +1,50 @@
+.hexagon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  width: 400px;
+  position: relative;
+  margin-top: 10px;
+}
+
+.hexagon-button {
+  width: 150px;
+  height: 150px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-image: url("hexagon_black.svg");
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.hexagon-button:hover{
+  background-image: url("hexagon_white.svg");
+  color: black;
+}
+
+.hexagon-button:nth-child(1) {
+  top: 0; /* Górna część trójkąta */
+  left: 40%; /* Centrowanie */
+  transform: translateX(-50%);
+}
+
+.hexagon-button:nth-child(2) {
+  top: 54%; /* Środek trójkąta */
+  left: 25%;
+  transform: translate(-50%, -50%);
+}
+
+.hexagon-button:nth-child(3) {
+  top: 33.5%; /* Środek trójkąta */
+  right: 25%;
+  transform: translate(50%, -50%);
+}
