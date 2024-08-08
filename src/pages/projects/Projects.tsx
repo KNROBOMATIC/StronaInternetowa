@@ -5,14 +5,22 @@ import {useNavigate} from "react-router-dom";
 
 function Projects(){
     const navigate = useNavigate();
-    const handleNavigate = () => {
-        navigate("/home");
+    const handleNavigateHome = () => {
+        navigate("/");
+    };
+    const handleNavigateTeslaCoil = () => {
+        navigate("/projects/tesla-coil");
+    };
+    const handleNavigateRoboticHead = () => {
+        navigate("/projects/robotic-head");
     };
 
     return (
         <Fragment>
             <Background/>
-            <button onClick={handleNavigate}>Go to Home</button>
+            <button onClick={handleNavigateHome}>Go to Home</button>
+            <button onClick={handleNavigateTeslaCoil}>Tesla Coil</button>
+            <button onClick={handleNavigateRoboticHead}>Robotic Head</button>
         </Fragment>
     )
 }
