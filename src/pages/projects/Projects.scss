@@ -48,3 +48,35 @@
   right: 25%;
   transform: translate(50%, -50%);
 }
+
+.info-box {
+  position: fixed;
+  width: 40vw;
+  aspect-ratio: 940 / 782;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.info-box.red {
+  background-image: url("home_screen_shot.JPG");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.info-box.brown {
+  background-color: brown;
+}
+
+.info-box.blue {
+  background-color: blue;
+}
+
+
+
