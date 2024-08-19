@@ -2,7 +2,7 @@ import Background from "../../components/background/Background.tsx";
 import "./Projects.scss";
 import { Fragment, useState } from "react";
 import { useNavigate } from "react-router-dom";
-
+import Breadcrumbs  from "../../components/breadcrumbs/Breadcrumbs.tsx"
 function Projects() {
     const navigate = useNavigate();
     const [hoveredButton, setHoveredButton] = useState(null);
@@ -17,7 +17,7 @@ function Projects() {
         navigate("/projects/robotic-head");
     };
 
-    const handleMouseEnter = (button) => {
+    const handleMouseEnter = (button: any) => {
         setHoveredButton(button);
     };
 
@@ -28,6 +28,7 @@ function Projects() {
     return (
         <Fragment>
             <Background />
+            <Breadcrumbs />
             <div className="hexagon-container">
                 <div
                     className="hexagon-button"

@@ -1,0 +1,53 @@
+.main-schematic-container{
+  width: min(100vw, 1000px);
+  aspect-ratio: 5 / 3;
+  border-width: 5px;
+  border-color: #dc5f00;
+  border-radius: 10px;
+  background-color: black;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.component-power-supply-sections{
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: 45%;
+}
+.component-power-supply-section-5v{
+  width: 50%;
+  height: 100%;
+  background-color: white;
+}
+
+.potential{
+    background-image: url("../../electronic-components/svgs/potencial_point.svg");
+    background-size: cover;
+    width: 100px;
+    aspect-ratio: 12/15;
+}
+
+.component-power-supply-section-12v-drv{
+  width: 50%;
+  height: 100%;
+  background-color: orange;
+}
+
+.go-to-repository-button{
+  position: absolute;
+  top: 20%;
+  left: 10%;
+}
+
+.go-to-electroboom-button{
+  position: absolute;
+  top: 25%;
+  left: 10%;
+}

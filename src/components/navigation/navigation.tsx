@@ -12,13 +12,26 @@ export const useNavigation = () => {
         navigate("/projects");
     };
 
+    const navigateToTeslaCoil = () => {
+        navigate("/projects/tesla-coil");
+    };
+
+    const navigateToRoboticHead = () => {
+        navigate("/projects/robotic-head");
+    };
+
+    const navigateToTeslaCoilSchematic = () => {
+        navigate("/projects/tesla-coil/schematic");
+    };
+
     return {
         navigateToHome,
         navigateToProjects,
+        navigateToTeslaCoil,
+        navigateToRoboticHead,
+        navigateToTeslaCoilSchematic,
     };
 };
-
-// src/utils/navigation.tsx
 
 export const openFacebookPageRobomaticon = () => {
     window.open("https://www.facebook.com/robomaticonpl", "_blank");

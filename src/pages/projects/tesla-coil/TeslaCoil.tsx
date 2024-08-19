@@ -1,17 +1,21 @@
 import Background from "../../../components/background/Background.tsx";
 import "./TeslaCoil.scss"
+import Breadcrumbs from "../../../components/breadcrumbs/Breadcrumbs.tsx";
+import {useNavigate} from "react-router-dom";
 import {Fragment} from "react";
-import { useNavigation } from "../../../components/navigation/navigation.tsx";
 
 function TeslaCoil(){
 
-    const { navigateToHome, navigateToProjects } = useNavigation();
+    const navigate = useNavigate();
+    const navigateToSchematic = () => {
+        navigate("/projects/tesla-coil/schematic");
+    };
 
     return (
         <Fragment>
             <Background/>
-            <button onClick={navigateToHome}>Go to Home</button>
-            <button onClick={navigateToProjects}>Go to Projects</button>
+            <Breadcrumbs/>
+            <button className="go-to-schematic-button" onClick={navigateToSchematic}>Go to Schematic</button>
         </Fragment>
     )
 }

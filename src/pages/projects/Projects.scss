@@ -1,57 +1,57 @@
 .hexagon-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  height: 400px;
-  width: 400px;
-  position: relative;
+  width: max(40vw, 40vh);
+  aspect-ratio: 3/1;
+  position: absolute;
+  top:10%;
+  left: 10%;
   margin-top: 10px;
+  gap: min(1vw, 1vh);
 }
 
 .hexagon-button {
-  width: 150px;
-  height: 150px;
-  background-size: contain;
+  width: max(12vw, 12vh);
+  height: max(12vw, 12vh);
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
-  background-image: url("hexagon_black.svg");
-  color: white;
+  background-image: url("gear-svgrepo-com.svg");
+  color: #dc5f00;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  font-size: 20px;
+  font-size: max(1.7vw, 1.7vh);
   font-weight: bold;
+  text-shadow:
+          -1px -1px 0 black,
+          1px -1px 0 black,
+          -1px  1px 0 black,
+          1px  1px 0 black;
 }
 
 .hexagon-button:hover{
-  background-image: url("hexagon_white.svg");
-  color: black;
+  transform: rotate(90deg);
+  transition: transform 0.3s ease-in-out;
 }
 
 .hexagon-button:nth-child(1) {
-  top: 0; /* Górna część trójkąta */
   left: 40%; /* Centrowanie */
-  transform: translateX(-50%);
 }
 
 .hexagon-button:nth-child(2) {
-  top: 54%; /* Środek trójkąta */
   left: 25%;
-  transform: translate(-50%, -50%);
 }
 
 .hexagon-button:nth-child(3) {
-  top: 33.5%; /* Środek trójkąta */
   right: 25%;
-  transform: translate(50%, -50%);
 }
 
 .info-box {
   position: fixed;
-  width: 40vw;
+  width: 50vw;
   aspect-ratio: 940 / 782;
   bottom: 20px;
   right: 20px;

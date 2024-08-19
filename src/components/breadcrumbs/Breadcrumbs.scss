@@ -1,0 +1,36 @@
+.breadcrumbs-main-container{
+  position: absolute;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: max(1vw, 1vh) max(1vw, 1vh) max(1vw, 1vh) max(1vw, 1vh) ;
+  gap: max(1vw, 1vh);
+  align-items: center;
+  z-index: 0;
+}
+
+.breadcrumbs-logo{
+  background-image: url("../../assets/Logo.svg");
+  background-size: cover;
+  width: min(10vw, 10vh);
+  aspect-ratio: 115 / 100;
+}
+
+.breadcrumbs-button{
+  cursor: pointer;
+  font-size: max(1.7vw, 1.7vh);
+  color: #dc5f00;
+  font-weight: bold;
+  font-style: oblique;
+}
+
+.breadcrumbs-button:hover{
+  text-decoration: underline;
+}
+
+.breadcrumbs-arrow{
+  font-size: max(2vw, 2vh);
+  color: #dc5f00;
+  font-weight: bold;
+}
