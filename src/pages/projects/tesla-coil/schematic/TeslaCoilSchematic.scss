@@ -1,9 +1,8 @@
 .main-schematic-container{
-  width: min(100vw, 1000px);
-  aspect-ratio: 5 / 3;
+  width: min(100vw, 800px);
+  aspect-ratio: 50 / 33;
   border-width: 5px;
   border-color: #dc5f00;
-  border-radius: 10px;
   background-color: black;
   position: absolute;
   left: 50%;
@@ -13,31 +12,7 @@
   z-index: 0;
   display: flex;
   flex-direction: column;
-}
-
-.component-power-supply-sections{
-  display: flex;
-  flex-direction: row;
-  width: 90%;
-  height: 45%;
-}
-.component-power-supply-section-5v{
-  width: 50%;
-  height: 100%;
-  background-color: white;
-}
-
-.potential{
-    background-image: url("../../electronic-components/svgs/potencial_point.svg");
-    background-size: cover;
-    width: 100px;
-    aspect-ratio: 12/15;
-}
-
-.component-power-supply-section-12v-drv{
-  width: 50%;
-  height: 100%;
-  background-color: orange;
+  overflow: hidden;
 }
 
 .go-to-repository-button{
@@ -50,4 +25,89 @@
   position: absolute;
   top: 25%;
   left: 10%;
+}
+
+.eagle-schematic{
+  background-image: url("eagle_schematic.png");
+  background-size: cover;
+  height: 50%;
+  aspect-ratio: 100/66;
+  background-repeat: no-repeat;
+}
+
+.eagle-pcb{
+  background-image: url("eagle_pcb.png");
+  background-size: cover;
+  height: 50%;
+  aspect-ratio: 100/63;
+  background-position: center;
+}
+
+.trapezoid-section{
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  z-index: 5;
+}
+
+.trapezoid {
+  margin-left: 80%;
+  width: 50%;
+  height: 100%;
+  background-color:#dc5f00;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 100% 100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 100;
+}
+
+.main-schematic-container:hover .trapezoid {
+  transform: translateX(-60%);
+}
+
+.trapezoid-1 {
+  position: absolute;
+  bottom: 0;
+  left: -30%; /* Początkowa pozycja poza ekranem z lewej strony */
+  width: 50%;
+  height: 100%;
+  background-color:#dc5f00;
+  clip-path: polygon(0% 0%, 0% 0%, 100% 100%, 0% 100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 100;
+}
+
+.main-schematic-container:hover .trapezoid-1 {
+  transform: translateX(60%);
+}
+
+.trapezoid-text{
+  color:#EEEEEE;
+  font-size: max(1.7vw,1.7vh);
+  width: max(20vw,20vh);
+  font-weight: bold;
+  position: absolute;
+  top: 10%;
+  width: max(30vh,30vw);
+  text-align: center;
+  cursor: pointer;
+}
+
+.trapezoid-text-1{  
+  color: #EEEEEE;
+  font-size: max(1.7vw,1.7vh);
+  font-weight: bold;
+  position: absolute;
+  width: max(15vh,15vw);
+  bottom: 10%;
+  right: 20%;
+  cursor: pointer;
+}
+
+.trapezoid-text:hover{
+  text-decoration: underline;
+}
+
+.trapezoid-text-1:hover{
+  text-decoration: underline;
 }

@@ -30,6 +30,7 @@
           1px -1px 0 black,
           -1px  1px 0 black,
           1px  1px 0 black;
+  transition: transform 0.3s ease-in-out;
 }
 
 .hexagon-button:hover{

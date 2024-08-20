@@ -16,15 +16,17 @@ function TeslaCoilSchematic(){
         <Fragment>
             <Background/>
             <Breadcrumbs/>
-            <button className="go-to-repository-button" onClick={openGitRepository}>Git Repository</button>
-            <button className="go-to-electroboom-button" onClick={openElectroboomsSite}>Circut's Author: Electroboom</button>
 
             <div className="main-schematic-container">
-                <div className="component-power-supply-sections">
-                    <div className="component-power-supply-section-5v">
-                        <div className="potential"></div>
+                <div className="eagle-schematic"></div>
+                <div className="eagle-pcb"></div>
+                <div className="trapezoid-section">
+                    <div className="trapezoid-1">
+                        <div className="trapezoid-text-1" onClick={openGitRepository}>Git Repository</div>
                     </div>
-                    <div className="component-power-supply-section-12v-drv"></div>
+                    <div className="trapezoid">
+                        <div className="trapezoid-text" onClick={openElectroboomsSite}>Circut's Author:<br /> Electroboom</div>
+                    </div>
                 </div>
             </div>
         </Fragment>
