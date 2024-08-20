@@ -65,13 +65,13 @@ function Projects() {
                 </div>
             </div>
             {hoveredButton === "home" && (
-                <div className="info-box red"></div>
+                <div className="info-box home"></div>
             )}
             {hoveredButton === "teslaCoil" && (
-                <div className="info-box brown">This is the info box for Tesla Coil.</div>
+                <div className="info-box tesla-coil"></div>
             )}
             {hoveredButton === "roboticHead" && (
-                <div className="info-box blue">This is the info box for Robotic Head.</div>
+                <div className="info-box robotic-head"></div>
             )}
         </Fragment>
     );
