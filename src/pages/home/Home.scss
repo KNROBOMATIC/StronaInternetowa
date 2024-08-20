@@ -104,6 +104,9 @@ $main-color-theme-red: #CF0A0A;
     margin-left: 0.2em;
     margin-right: 0.2em;
     background-image: url("hexagon_white.svg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .page-home-button-navigate-projects-fb-robomaticon:hover .robomaticon-icon{
@@ -126,7 +129,6 @@ $main-color-theme-red: #CF0A0A;
 .robomaticon-icon-logo{
     width: 0.7em;
     height: 0.7em;
-    transform: translate(0.15em, -0.27em);
     background-image: url("../../assets/Logo_orange.svg");
 }
 
