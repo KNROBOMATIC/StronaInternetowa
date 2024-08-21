@@ -1,14 +1,20 @@
-import { Fragment } from "react";
+import {Fragment} from "react";
 import Background from "../../components/background/Background";
 import "./Home.scss";
 import {openFacebookPageRobomatic, openFacebookPageRobomaticon, useNavigation} from "../../components/navigation/navigation.tsx";
+import {useNavigate} from "react-router-dom";
 
 function Home() {
+    const navigate = useNavigate();
+
+    const handleNavigateVoid = () => {
+        navigate("/fasdfa");
+    };
 
     return (
         <Fragment>
             <Background/>
-            <div className="page-home-logo"></div>
+            <div className="page-home-logo"  onClick={handleNavigateVoid}></div>
             <div className="page-home-button-navigate page-home-button-navigate-projects" onClick={useNavigation().navigateToProjects}>Go to
                 Projects
             </div>

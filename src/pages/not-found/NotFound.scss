@@ -1,0 +1,89 @@
+.not-found-backgroud{
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background-image: url("horror-background.jpg");
+  background-size: cover;
+}
+
+.not-found-go-home-button{
+  right: 10vw;
+  top: 10vh;
+  position: absolute;
+  width: max(5vh,5vw);
+  aspect-ratio: 5/2;
+  z-index: 10;
+  font-family: ghastly;
+  color: white;
+  font-size: max(5vw,5vh);
+  width: fit-content;
+  cursor: pointer;
+}
+
+.not-found-go-home-button:hover{
+  font-weight: bold;
+}
+
+.not-found-logo-container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.not-found-logo {
+  width: min(80vw,80vh);
+  aspect-ratio: 1000/865;
+  background-image: url("../../assets/Logo.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: moveUpDown 3s ease-in-out infinite;
+}
+
+/* Definicja animacji */
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(5vh); /* Początkowa pozycja */
+  }
+  50% {
+    transform: translateY(-5vh); /* Ruch do góry */
+  }
+  100% {
+    transform: translateY(5vh); /* Powrót do pozycji początkowej */
+  }
+}
+
+@font-face {
+  font-family: ghastly;
+  src: url("GhastlyPanic.ttf");
+}
+
+.not-found-lost-text-top{
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  color: white;
+  font-size: max(5vw,5vh);
+  text-align: center;
+  font-family: ghastly;
+}
+
+.not-found-lost-text-bottom{
+  position: absolute;
+  bottom: min(2vw, 2vh);
+  width: 100vw;
+  color: white;
+  font-size: max(5vw,5vh);
+  font-family: ghastly;
+  text-align: center;
+}
+
+
+

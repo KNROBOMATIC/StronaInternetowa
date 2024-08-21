@@ -1,0 +1,55 @@
+.eye {
+  width: min(6vw,6vh);
+  aspect-ratio: 1/1;
+  background-color: #b19cd9;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iris{
+  position: absolute;
+  width: min(9vw,9vh);
+  aspect-ratio: 1/1;
+  background-color: black;
+  border-radius: 50%;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.n0{
+  top:min(3vw,3vh);
+  left:min(21vw,21vh);
+}
+.n1{
+  top:min(3vw,3vh);
+  left:min(50vw,50vh);
+}
+.n2{
+  top:min(31vw,31vh);
+  left:min(67vw,67vh);
+}
+.n3{
+  top:min(57vw,57vh);
+  left:min(51vw,51vh);
+}
+.n4{
+  top:min(31vw,31vh);
+  left:min(5vw,5vh);
+}
+.n5{
+  top:min(57vw,57vh);
+  left:min(20vw,20vh);
+}
+
+.pupil {
+  width: min(3vw,3vh);
+  aspect-ratio: 1/1;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  transition: transform 0.05s ease-out;
+}
