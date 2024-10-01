@@ -3,3 +3,64 @@
   top: 30%;
   left: 10%;
 }
+
+.photo-main-container{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo-gallery{
+  position: absolute;
+  top: 40%;
+  display: flex;
+  flex-direction: row;
+  gap:5px;
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+}
+
+.photo-item{
+  width: 100px;
+  aspect-ratio: 1536/2048;
+  transition: .5s;
+  filter:brightness(0);
+}
+
+.photo-item:hover{
+  filter:brightness(1);
+  transform: translateZ(200px);
+}
+
+.photo-item:hover + *{
+  filter:brightness(0.6);
+  transform: translateZ(150px) rotateY(40deg);
+}
+
+.photo-item:hover + * + *{
+  filter:brightness(0.4);
+  transform: translateZ(70px) rotateY(20deg);
+}
+
+.photo-item:hover + * + * + *{
+  filter:brightness(0.2);
+  transform: translateZ(30px) rotateY(10deg);
+}
+
+.photo-item:has(+ *:hover){
+  filter:brightness(0.6);
+  transform: translateZ(150px) rotateY(-40deg);
+}
+
+.photo-item:has(+*+ *:hover){
+  filter:brightness(0.4);
+  transform: translateZ(70px) rotateY(-20deg);
+}
+
+.photo-item:has(+*+*+ *:hover){
+  filter:brightness(0.2);
+  transform: translateZ(30px) rotateY(-10deg);
+}
